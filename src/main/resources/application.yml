@@ -11,7 +11,7 @@ spring:
       hibernate:
 #        show_sql: true -> sout 대신 밑에 있는 logging으로 log 대체
         format_sql: true
-
+        use_sql_comments: true # 실행되는 JPQL을 볼 수 있다.
 
 logging.level:
   org.hibernate.SQL: debug
